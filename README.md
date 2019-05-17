@@ -1,6 +1,24 @@
-Arbitrary Style Transfer Network
-=================
-A small demo of the <a href="https://www.jsdelivr.com/package/npm/@magenta/image">magenta/image</a> library that performs stylization on a content/style image pair **without** having to retrain the 
-model if the style image changes.
+# rnn-tutorial
+RNN Tutorial for Artists
 
-`ArbitraryStyleTransferNetwork` wraps around [Reiichiro Nakano](https://twitter.com/ReiiYoda)'s TensorFlow.js [port](https://github.com/reiinakano/arbitrary-image-stylization-tfjs) of Ghiasi et al.'s [arbitrary stylization model](https://arxiv.org/abs/1705.06830).
+![title_img](https://cdn.rawgit.com/hardmaru/rnn-tutorial/master/neural.svg)
+
+Suplementary material for [blog post](http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/).
+
+## Usage ##
+
+In the html file, include the following files:
+
+```html
+	<script language="javascript" type="text/javascript" src="p5.min.js"></script>
+	<script language="javascript" type="text/javascript" src="numjs.js"></script>
+	<script language="javascript" type="text/javascript" src="weights.js"></script>
+	<script language="javascript" type="text/javascript" src="model.js"></script>
+	<script language="javascript" type="text/javascript" src="sketch_basic.js"></script>
+```
+
+The sketch in `sketch_basic.js` is a basic example of how the Handwriting Model works.  It is written with p5.js as an object hence allowing multiple sketches to be on the same page.
+
+## License ##
+
+MIT
