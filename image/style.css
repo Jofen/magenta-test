@@ -83,7 +83,8 @@ input[type="file"] {
 }
 
 .image {
-  height: 256px; /* TODO */
+  width: 200px;
+  height: 256px;
   margin: 0 auto;
   display: block;
 }
