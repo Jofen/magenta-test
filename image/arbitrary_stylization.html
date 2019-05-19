@@ -9,15 +9,33 @@
   </head>
 
   <body>
-    <h2>Step 1. <label>upload photo <input type="file" onchange="loadContent(event)"></label></h2>
-    <img id="content" height="256" class="image" src="content.jpg"/>
-
-    <h2>Step 2. <label>upload style <input type="file" onchange="loadStyle(event)"></label></h2>
-    <img id="style" height="256" class="image" src="style.jpg"/>
+    <div class="container">
+      <div class="left">
+        <h1>
+          <b>Arbitrary</b> Style Transfer with <a href="https://www.npmjs.com/package/@magenta/image">magenta.js</a>
+        </h1>
+      </div>
+    </div>
     
-    <canvas id="stylized" width="192" height="256" class="image"></canvas>
-    <br>
-    <button id="stylize" disabled>Stylize</button>
+    <div class="container">
+      <div class="left">
+        <div class="frame">
+          <h2>Step 1. <label>upload photo <input type="file" onchange="loadContent(event)"></label></h2>
+          <img id="content" class="image" src="content.jpg"/> 
+        </div>
+        <div class="right">
+          <div class="frame">
+             <h2>Step 2. <label>upload style <input type="file" onchange="loadStyle(event)"></label></h2>
+             <img id="style" class="image" src="style.jpg" />
+          </div>
+        </div>
+      </div> 
+      
+      <div class="frame">
+        <button id="stylize" disabled>Stylize</button>
+        <canvas id="stylized" height="250px"></canvas>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
     <script src="./arbitrary_stylization_bundle.js"></script>
