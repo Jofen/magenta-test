@@ -16614,7 +16614,6 @@ function bindVertexProgramAttributeStreams(gl, program, vertexBuffer) {
 }
 exports.bindVertexProgramAttributeStreams = bindVertexProgramAttributeStreams;
 function uploadPixelDataToTexture(gl, texture, pixels) {
-    pixels.crossOrigin = "anonymous";
     webgl_util.callAndCheck(gl, function () { return gl.bindTexture(gl.TEXTURE_2D, texture); });
     webgl_util.callAndCheck(gl, function () { return gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, pixels); });
     webgl_util.callAndCheck(gl, function () { return gl.bindTexture(gl.TEXTURE_2D, null); });
